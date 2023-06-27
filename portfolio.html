@@ -16,36 +16,40 @@
     </head>
     <body>
         <!--nagłówek strony-->
-        <header class="page-header">
-            <div class="page-header-left container">
+        <header class="header">
+            <div class="header__container container">
+                <div class="header__left-side">
             <!--logo w nagłówku-->
-            <a class="logo" href="./index.html"><span class="logo-blue">Web</span>Studio</a>
+            <a class="header__logo logo" href="./index.html"><span class="logo-styles">Web</span>Studio</a>
             <!--menu nawigacyjne-->
-            <nav class="navigation">
+            <nav class="nav">
                 <!--lista wypunktowana, nieuporządkowana-->
-                <ul class="nav-menu">
-                    <li>
-                        <a class="menu" href="./index.html">Agencja</a>
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a class="nav__link" href="./index.html">Agencja</a>
                     </li>
-                    <li>
-                        <a class="menu-blue" href="./portfolio.html">Portfolio</a>
+                    <li class="nav__item">
+                        <a class="nav__link nav__link--underline" href="./portfolio.html">Portfolio</a>
                     </li>
-                    <li>
-                        <a class="menu" href="#">Kontakt</a>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#">Kontakt</a>
                     </li>
                 </ul>
             </nav>
+        </div>
             <!--linki do kontaktu-->
-            <ul class="contact">
-                <li>
-                    <a class="mail" href="mailto:info@devstudio.com"><svg class="icon-mail">
+            <ul class="contact-info">
+                <li class="contact-info__item">
+                    <a class="contact-info__link" href="mailto:info@devstudio.com"><svg width="20" height="16" class="contact-info__icon">
                         <use href="./images/icons.svg#icon-envelope"></use>
-                        </svg>info@devstudio.com</a>
+                        </svg>
+                        <span class="contact-info__text">info@devstudio.com</span></a>
                 </li>
-                <li>
-                    <a class="tel" href="tel:+48111111111"><svg class="icon-phone">
+                <li class="contact-info__item">
+                    <a class="contact-info__link" href="tel:+48111111111"><svg width="17" height="20" class="contact-info__icon">
                         <use href="./images/icons.svg#icon-smartphone"></use>
-                        </svg>(48)111-111-111</a>
+                        </svg>
+                        <span class="contact-info__text">+48 111 111 111</span></a>
                 </li>
             </ul>
         </div>
@@ -149,12 +153,12 @@
         </div>
         </section>
     </main>
-    <footer>
-        <!--stopka wraz z linkiem do strony i adres-->
-        <div class="container-wrap container">
-            <div class="footer-logo">
-                <a class="logo-footer" href="./index.html"><span class="logo-blue-footer">Web</span>Studio</a>
-                    <address>
+    <!--stopka wraz z linkiem do strony i adres-->
+    <footer class="footer">
+        <div class="footer__container container">
+            <div class="footer__left-side">
+                <a class="footer__logo" href="./index.html"><span class="footer__logo-styles">Web</span>Studio</a>
+                    <address class="address">
                         <ul class="contact-footer">
                             <li>
                                 <a class="address-link" href="https://goo.gl/maps/B4e3q8g2ErGHVDdUA" target="_blank">m. Warszawa, Aleje Jerozolimskie 21</a>
