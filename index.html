@@ -69,12 +69,6 @@
     <!--główna zawartość strony-->
     <main>
       <!--Nagłówek sekcji głównej-->
-      <section class="hero">
-        <div class="hero__container container">
-          <h1 class="hero__title">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
-          <button class="hero__button" type="button" data-modal-open>
-            Zamów usługę
-          </button>
           <section class="hero">
             <div class="hero__container container">
                 <h1 class="hero__title">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
@@ -86,10 +80,10 @@
                     Zamów usługę
                 </button>
                 <div
-                    class="modal is-hidden"
+                    class="modal is-hidden modal__is-hidden"
                     data-modal
                 >
-                    <div class="modal__content">
+                    <div class="modal-content modal__content">
                         <button
                             class="modal-close-button modal__close-button"
                             data-modal-close
@@ -105,24 +99,24 @@
                             name="modal-form"
                             autocomplete="on"
                         >
-                            <div class="modal-contact-name">
-                                <label class="modal-name">
+                            <div class="modal-contact-name modal__contact-name">
+                                <label class="modal-name modal__label-name">
                                     Imie
-                                    <div class="div-name">
+                                    <div class="div-name modal__name">
                                         <input
                                             type="text"
                                             name="formname"
                                             id="name"
                                             required
                                         />
-                                        <svg class="icon-mod-name">
+                                        <svg class="icon-mod-name modal__icon-body">
                                             <use href="./images/icons.svg#icon-mod-name"></use>
                                         </svg>
                                     </div>
                                 </label>
                             </div>
-                            <div class="modal-contact-phone">
-                                <label class="modal-phone">
+                            <div class="modal-contact-phone modal__contact-phone">
+                                <label class="modal-phone modal__label-phone">
                                     Telefon
                                     <input
                                         type="tel"
@@ -130,13 +124,13 @@
                                         id="phone"
                                         required
                                     />
-                                    <svg class="icon-mod-phone">
+                                    <svg class="icon-mod-phone modal__icon-phone">
                                         <use href="./images/icons.svg#icon-mod-phone"></use>
                                     </svg>
                                 </label>
                             </div>
-                            <div class="modal-contact-email">
-                                <label class="modal-email">
+                            <div class="modal-contact-email modal__contact-mail">
+                                <label class="modal-email modal__label-mail">
                                     Email
                                     <input
                                         type="email"
@@ -144,13 +138,13 @@
                                         id="email"
                                         required
                                     />
-                                    <svg class="icon-mod-mail">
+                                    <svg class="icon-mod-mail modal__icon-mail">
                                         <use href="./images/icons.svg#icon-mod-mail"></use>
                                     </svg>
                                 </label>
                             </div>
-                            <div class="modal-contact-text">
-                                <label class="modal-text">
+                            <div class="modal-contact-text modal__contact-text">
+                                <label class="modal-text modal_label-text">
                                     Komentarz
                                     <textarea
                                         name="text"
@@ -160,7 +154,7 @@
                                     ></textarea>
                                 </label>
                             </div>
-                            <div class="modal-privacy">
+                            <div class="modal-privacy modal__privacy">
                                 <input
                                     type="checkbox"
                                     name="privacy"
@@ -176,7 +170,7 @@
                                 </label>
                             </div>
                             <button
-                                class="modal-submit-button"
+                                class="modal-submit-button modal__submit-button"
                                 type="submit"
                             >
                                 Wyślij
