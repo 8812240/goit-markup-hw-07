@@ -80,7 +80,7 @@
                     Zamów usługę
                 </button>
                 <div
-                    class="modal__is-hidden"
+                    class="modal is-hidden"
                     data-modal
                 >
                     <div class="modal__content">
@@ -99,8 +99,8 @@
                             name="modal-form"
                             autocomplete="on"
                         >
-                            <div class="modal__contact-name">
-                                <label class="modal__label-name">
+                            <div class="modal__contact-wrap">
+                                <label class="modal__label">
                                     Imie
                                     <div class="modal__name">
                                         <input
@@ -115,8 +115,8 @@
                                     </div>
                                 </label>
                             </div>
-                            <div class="modal__contact-phone">
-                                <label class="modal__label-phone">
+                            <div class="modal__contact-wrap">
+                                <label class="modal__label">
                                     Telefon
                                     <input
                                         type="tel"
@@ -129,8 +129,8 @@
                                     </svg>
                                 </label>
                             </div>
-                            <div class="modal__contact-mail">
-                                <label class="modal__label-mail">
+                            <div class="modal__contact-wrap">
+                                <label class="modal__label">
                                     Email
                                     <input
                                         type="email"
@@ -147,6 +147,7 @@
                                 <label class="modal_label-text">
                                     Komentarz
                                     <textarea
+                                        class="modal__textarea"
                                         name="text"
                                         rows="5"
                                         id="text"
@@ -459,7 +460,7 @@
                       target="_blank"
                       rel="noopener noreferrer nofollow"
                       >
-                        <svg class="sm-icon-footer social-media-links__icon" width="20px" height="20px">
+                        <svg class="social-media-links__icon" width="20px" height="20px">
                           <use href="./images/icons.svg#icon-linkedin"></use>
                         </svg>
                       </a>
@@ -522,7 +523,7 @@
                       target="_blank"
                       rel="noopener noreferrer nofollow"
                       >
-                        <svg class="sm-icon-footer social-media-links__icon" width="20px" height="20px">
+                        <svg class="social-media-links__icon" width="20px" height="20px">
                           <use href="./images/icons.svg#icon-linkedin"></use>
                         </svg>
                       </a>
@@ -611,7 +612,7 @@
                         target="_blank"
                         rel="noopener noreferrer nofollow" class="footer__link"
                         >
-                        <svg class="footer__logo" width="20px" height="20px">
+                        <svg class="footer-social-media__logo" width="20px" height="20px">
                             <use href="./images/icons.svg#icon-instagram"></use>
                         </svg>
                         </a>
@@ -621,7 +622,7 @@
                         target="_blank"
                         rel="noopener noreferrer nofollow" class="footer__link"
                         >
-                        <svg class="footer__logo" width="20px" height="20px">
+                        <svg class="footer-social-media__logo" width="20px" height="20px">
                             <use href="./images/icons.svg#icon-twitter"></use>
                         </svg>
                         </a>
@@ -631,7 +632,7 @@
                         target="_blank"
                         rel="noopener noreferrer nofollow" class="footer__link"
                         >
-                        <svg class="footer__logo" width="20px" height="20px">
+                        <svg class="footer-social-media__logo" width="20px" height="20px">
                             <use href="./images/icons.svg#icon-facebook"></use>
                         </svg>
                         </a>
@@ -641,7 +642,7 @@
                         target="_blank"
                         rel="noopener noreferrer nofollow" class="footer__link"
                         >
-                        <svg class="footer__logo" width="20px" height="20px">
+                        <svg class="footer-social-media__logo" width="20px" height="20px">
                             <use href="./images/icons.svg#icon-linkedin"></use>
                         </svg>
                         </a>
